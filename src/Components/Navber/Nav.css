@@ -1,0 +1,11 @@
+body {
+    padding-top: 70px;
+    /* Adjust based on the height of your navbar */
+}
+
+#Navber {
+    
+    z-index: 1000;
+
+    /* Adjust based on the height of your navbar */
+}

@@ -4,6 +4,7 @@ import { useState } from "react";
 import "./App.css";
 import Navber from "./Components/Navber/Navber";
 import { Outlet } from "react-router-dom";
+import Fotter from "./Components/Fotter/Fotter";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
     <>
       <Navber />
       <Outlet></Outlet>
+      <Fotter></Fotter>
     </>
   );
 }

@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home/Home.jsx";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const router = createBrowserRouter([
   {
@@ -12,16 +13,18 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element:<Home/>,
-      }
-    ]
+        element: <Home />,
+      },
+    ],
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}>
-      <App />
-    </RouterProvider>
+    <ParallaxProvider>
+      <RouterProvider router={router}>
+        <App />
+      </RouterProvider>
+    </ParallaxProvider>
   </StrictMode>
 );
